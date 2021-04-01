@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 centered">
+            <h1 class="section-heading text-uppercase">ABOUT</h1>
+            <h4 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h4>
+        </div>
+    </div>
+    
+    <div *ngFor="let el of aboutlist">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-3 r">
+                <h4 class="subheading">{{el.head}}</h4>
+                <p class="text-muted">{{el.text}}</p>
+            </div>
+            <div class="col-lg-2 centered"><img class="rounded-circle img-fluid" src=" {{ el.imgpath }}" alt=""></div>
+            <div class="col-lg-3 l"></div>
+            <div class="col-lg-2"></div>
+        </div>
+        <br><br>
+    </div>
+</div>
